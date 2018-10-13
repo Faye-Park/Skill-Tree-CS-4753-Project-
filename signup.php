@@ -43,7 +43,7 @@
 
 							<!-- Content -->
 								<div class="content">
-									<form>
+									<form action = "signup.php" method = "POST">
 										<div class="row gtr-50">
 											<div class="col-6 col-12-mobile">
 												<input type="text" name="firstname" placeholder="First Name" />
@@ -64,6 +64,14 @@
 												<ul class="buttons">
 													<li><input type="submit" class="special" value="Signup" /></li>
 												</ul>
+											</div>
+											<?php $firstname="";?>
+											<?php $lastname="";?>
+											<?php if (isset($_POST["firstname"])) { $firstname = $_POST["firstname"]; }?>
+											<?php if (isset($_POST["lastname"])) { $lastname = $_POST["lastname"];} ?>
+											<div class="col-12">
+												Received first name: <?php echo $firstname; ?><br>
+												Received last name: <?php echo $lastname; ?>
 											</div>
 										</div>
 									</form>
