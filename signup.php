@@ -65,14 +65,14 @@
 													<li><input type="submit" class="special" value="Signup" /></li>
 												</ul>
 											</div>
-											<?php $firstname="";?>
+											<!--<?php $firstname="";?>
 											<?php $lastname="";?>
 											<?php if (isset($_POST["firstname"])) { $firstname = $_POST["firstname"]; }?>
 											<?php if (isset($_POST["lastname"])) { $lastname = $_POST["lastname"];} ?>
 											<div class="col-12">
 												Received first name: <?php echo $firstname; ?><br>
 												Received last name: <?php echo $lastname; ?>
-											</div>
+											</div>-->
 										</div>
 									</form>
 								</div>
@@ -102,6 +102,8 @@
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollgress.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.validate.min.js"></script>
+			<script src="assets/js/validation.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
