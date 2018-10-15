@@ -117,7 +117,7 @@
 												</select>
 											</div>
 											<div class="col-6 col-12-mobile">
-												<input type="text" name="zipcode" placeholder="Zipcode" />
+												<input type="text" name="zipcode" id="zipcode" placeholder="Zipcode" />
 											</div>
 											<div class="col-12">
 												<input type="password" name="password" id="password" placeholder="Password" />
