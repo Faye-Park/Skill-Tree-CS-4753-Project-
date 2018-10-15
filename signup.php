@@ -43,7 +43,7 @@
 
 							<!-- Content -->
 								<div class="content">
-									<form action = "signup.php" method = "POST">
+									<form action = "signup.php" method = "POST" name="signupform">
 										<div class="row gtr-50">
 											<div class="col-6 col-12-mobile">
 												<input type="text" name="firstname" placeholder="First Name" />
