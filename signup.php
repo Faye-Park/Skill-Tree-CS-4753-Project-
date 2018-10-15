@@ -138,7 +138,11 @@
 												Received first name: <?php echo $firstname; ?><br>
 												Received last name: <?php echo $lastname; ?>
 											</div>-->
-											<?php $db_connection = pg_connect("host=localhost dbname=d9rsujpdd41171 user=zaimztdkhiptlg password=25fe2e242db912e7638b18668ef861180124a0081ad0bd07ca7f33e1bd6c7de8");?>
+											<?php 
+											$db_connection = pg_connect("host=localhost port=5432 dbname=d9rsujpdd41171 user=zaimztdkhiptlg password=25fe2e242db912e7638b18668ef861180124a0081ad0bd07ca7f33e1bd6c7de8");
+											$query = "INSERT INTO siteUsers VALUES ('$_POST[firstname]','$_POST[lastname]','$_POST[email]','$_POST[address]','$_POST[city]','$_POST[state],'$_POST[zipcode],'$_POST[password]')";
+											$result = pg_query($query);
+											?>
 										</div>
 									</form>
 								</div>
