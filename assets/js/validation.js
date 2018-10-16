@@ -11,11 +11,11 @@ $.validator.addMethod(
     },
 );
 
-$.validator.addMethod("valueNotEquals", function(value, element, arg){
+/*$.validator.addMethod("valueNotEquals", function(value, element, arg){
     return arg !== value;
     },
 "Value must not equal arg."
-);
+);*/
 
 $(function() {
     $("form[name='signupform']").validate({
@@ -41,8 +41,7 @@ $(function() {
                 regex: "^[a-zA-Z][a-zA-Z\-\. ]*$"
             },
             state: {
-                required: true,
-                SelectName: { valueNotEquals: "nostate" }
+                required: true
             },
             zipcode: {
                 required: true,
@@ -81,8 +80,7 @@ $(function() {
                 regex: "Enter valid characters (alphabet, -, ., and spaces)"
             },
             state: {
-                required: "This field is required",
-                SelectName: { valueNotEquals: "Select a state" }
+                required: "This field is required"
             },
             zipcode: {
                 required: "This field is required",

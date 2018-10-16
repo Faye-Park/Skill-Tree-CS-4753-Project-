@@ -43,10 +43,16 @@
 
 							<!-- Content -->
 								<div class="content">
-									<form action = "signup.php" method = "POST" name="signupform">
+									<form action = "sendinfo.php" method = "POST" name="signupform">
 										<div class="row gtr-50">
+										<?php if (isset ($_GET["signup"]) && !$_GET["signup"]): ?>
+												<div class="col-12">
+													<p class="erroremail" style="color: red;" id="erroremail">This email already exists. Please choose another one.</p>
+												</div>
+										<?php endif; ?>
+
 											<div class="col-6 col-12-mobile">
-												<input type="text" name="firstname" placeholder="First Name" />
+												<input type="text" name="firstname" placeholder="First Name"/>
 											</div>
 											<div class="col-6 col-12-mobile">
 												<input type="text" name="lastname" placeholder="Last Name" />
@@ -61,8 +67,8 @@
 												<input type="text" name="city" placeholder="City" />
 											</div>
 											<div class="col-6 col-12-mobile">
-												<select>
-													<option value="nostate">Select state</option>
+												<select name="state">
+													<option value="">Select state</option>
 													<option value="AL">Alabama</option>
 													<option value="AK">Alaska</option>
 													<option value="AZ">Arizona</option>
@@ -130,22 +136,6 @@
 													<li><input type="submit" class="special" value="Signup" /></li>
 												</ul>
 											</div>
-											<!--<?php $firstname="";?>
-											<?php $lastname="";?>
-											<?php if (isset($_POST["firstname"])) { $firstname = $_POST["firstname"]; }?>
-											<?php if (isset($_POST["lastname"])) { $lastname = $_POST["lastname"];} ?>
-											<div class="col-12">
-												Received first name: <?php echo $firstname; ?><br>
-												Received last name: <?php echo $lastname; ?>
-											</div>-->
-											<?php
-											$password = $_POST['password'];
-											$hashed_password = password_hash($password, PASSWORD_DEFAULT);
-											
-											$db_connection = pg_connect("host=localhost port=5432 dbname=d9rsujpdd41171 user=zaimztdkhiptlg password=25fe2e242db912e7638b18668ef861180124a0081ad0bd07ca7f33e1bd6c7de8");
-											$query = "INSERT INTO siteUsers VALUES ('$_POST[firstname]','$_POST[lastname]','$_POST[email]','$_POST[address]','$_POST[city]','$_POST[state],'$_POST[zipcode], $hashed_password)";
-											$result = pg_query($query);
-											?>
 										</div>
 									</form>
 								</div>
