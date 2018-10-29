@@ -10,34 +10,31 @@ require 'vendor/autoload.php';
 $name = $_POST["name"];
 $email = $_POST["email"];
 $subject = $_POST["subject"];
-$body = $_POST["body"];
 $message = $_POST["message"];
 
 $url = "/Skill-Tree-CS-4753-Project-/contactconfirmation.html";
 
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {
-  /*
     //Server settings
     $mail->SMTPDebug = 2;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
+    $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'user@example.com';                 // SMTP username
-    $mail->Password = 'secret';                           // SMTP password
+    $mail->Username = 'skillTreeOfficial@gmail.com';                 // SMTP username
+    $mail->Password = 'eCommerceSkillTree!';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
-    */
 
     //Recipients
-    $mail->setFrom('$email', '$name');
+    $mail->setFrom($email, $name);
     $mail->addAddress('skillTreeOfficial@gmail.com');
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = '$subject';
-    $mail->Body    = '$message';
-    $mail->AltBody = '$message';
+    $mail->Subject = $subject;
+    $mail->Body    = $message;
+    $mail->AltBody = $message;
 
     $mail->send();
     echo 'Message has been sent';
