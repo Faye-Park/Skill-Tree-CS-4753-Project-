@@ -31,7 +31,6 @@ else {
     $mail = new PHPMailer(true);
     try {
         //Server settings
-        $mail->SMTPDebug = 2;
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
@@ -49,7 +48,6 @@ else {
         $mail->AltBody = 'Welcome to SkillTree!
                         Thank you for signing up for SkillTree! You now have access to all available tutoring sessions.';
         $mail->send();
-        echo 'message sent';
     } catch (Exception $e) {
         echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     }
