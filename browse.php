@@ -65,7 +65,7 @@
 													</div>
                           <p>Learn how to get great flavors from simple ingredients <br />
 														using stir fry techniques.</p>
-			       <p>Price: USD $10, BTC <?php echo $BTC2 ?> </p>
+			       <p>Price: USD $10, BTC <?php echo $BTC2; ?> </p>
 														<form action="https://test.bitpay.com/checkout" method="post" >
 														  <input type="hidden" name="action" value="checkout" />
 														  <input type="hidden" name="posData" value="" />
@@ -139,7 +139,7 @@
 					</ul>
 
 				</footer>
-			<?php require 'usdTobtc.php'; $BTC1 = usdTobtc(20.00); ?>
+			<?php require_once("usdTobtc.php"); $BTC1 = usdTobtc(20.00); ?>
 			<?php $BTC2 = usdTobtc(10.00); ?>
 
 		</div>
