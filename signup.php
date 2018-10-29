@@ -21,6 +21,7 @@
 					<nav id="nav">
 						<ul>
 							<li class="current"><a href="index.html">Home</a></li>
+							<li class="current"><a href="browse.html">Browse</a></li>
 							<li class="current"><a href="aboutus.html">About Us</a></li>
 							<li class="current"><a href="contact.html">Contact Us</a></li>
 							<li class="current"><a href="login.html">Log In</a></li>
