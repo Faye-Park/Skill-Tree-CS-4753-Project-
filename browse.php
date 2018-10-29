@@ -50,8 +50,8 @@
 													</div>
                           <p>Learn the basic syntax and control flows of java <br />
 														and begin your journey with programming.</p>
-			      #<?php print($bit1); ?>
-			      #<?php echo $btc1; ?>
+			      <p>BTC</p> <?php print($bit1); ?>
+			      <?php echo $btc1; ?>
 														<form action="https://test.bitpay.com/checkout" method="post" >
 														  <input type="hidden" name="action" value="checkout" />
 														  <input type="hidden" name="posData" value="" />
@@ -67,7 +67,7 @@
 													</div>
                           <p>Learn how to get great flavors from simple ingredients <br />
 														using stir fry techniques.</p>
-			     # <?php print($bit2) ?>
+			      <p>BTC</p> <?php print($bit2) ?>
 			      <?php echo $btc2 ?>
 														<form action="https://test.bitpay.com/checkout" method="post" >
 														  <input type="hidden" name="action" value="checkout" />
