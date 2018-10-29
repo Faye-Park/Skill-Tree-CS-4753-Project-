@@ -37,7 +37,6 @@
 						<span class="icon fa-laptop"></span>
 						<h2>Browse</h2>
 						<p>Find a topic you want to learn about</p>
-						<?php echo $BTC1 ?>
 					</header>
 
 					<!-- One -->
@@ -66,7 +65,8 @@
 													</div>
                           <p>Learn how to get great flavors from simple ingredients <br />
 														using stir fry techniques.</p>
-			       <p>Price: USD $10, BTC <?php echo $BTC2; ?> </p>
+			       <p>Price: USD $10, BTC </p>
+			      <?php print $BTC1 ?>
 														<form action="https://test.bitpay.com/checkout" method="post" >
 														  <input type="hidden" name="action" value="checkout" />
 														  <input type="hidden" name="posData" value="" />
