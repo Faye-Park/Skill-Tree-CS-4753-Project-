@@ -36,7 +36,7 @@ else {
         $mail->Host = 'smtp.gmail.com;smtp-relay.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'skillTreeOfficial@gmail.com';
-        $mail->Password = 'ecommerce1';
+        $mail->Password = 'eCommerceSkillTree!';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
