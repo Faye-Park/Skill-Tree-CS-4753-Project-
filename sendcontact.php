@@ -12,7 +12,7 @@ $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
 
-$url = "/Skill-Tree-CS-4753-Project-/contactconfirmation.html";
+$url = "contactconfirmation.html";
 
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {

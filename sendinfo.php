@@ -1,4 +1,4 @@
-<?php 
+<?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
@@ -17,11 +17,11 @@ if ($db_connection->connect_error) {
 }
 $check = "SELECT * FROM \"siteUsers\" WHERE email='$email'";
 $result = pg_query($db_connection,$check);
-$url = "/Skill-Tree-CS-4753-Project-/confirmation.html";
+$url = "confirmation.html";
 
 
 if (pg_num_rows($result)>=1) {
-    $url="/Skill-Tree-CS-4753-Project-/signup.php?signup=0";
+    $url="signup.php?signup=0";
 }
 else {
     $sql = "INSERT INTO \"siteUsers\" (firstname, lastname, email, address, city, state, zipcode, password) VALUES ('$firstname','$lastname','$email','$address','$city','$state','$zipcode','$password')";
@@ -39,7 +39,7 @@ else {
         $mail->Password = 'eCommerceSkillTree!';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
-    
+
         $mail->setFrom('skillTreeOfficial@gmail.com', 'SkillTree');
         $mail->addAddress($email);
         $mail->isHTML(true);
