@@ -17,11 +17,11 @@ if ($db_connection->connect_error) {
 }
 $check = "SELECT * FROM \"siteUsers\" WHERE email='$email'";
 $result = pg_query($db_connection,$check);
-$url = "confirmation.html";
+$url = "https://skill-tree-ecommerce-project.herokuapp.com/confirmation.html";
 
 
 if (pg_num_rows($result)>=1) {
-    $url="signup.php?signup=0";
+    $url="https://skill-tree-ecommerce-project.herokuapp.com/signup.php?signup=0";
 }
 else {
     $sql = "INSERT INTO \"siteUsers\" (firstname, lastname, email, address, city, state, zipcode, password) VALUES ('$firstname','$lastname','$email','$address','$city','$state','$zipcode','$password')";
