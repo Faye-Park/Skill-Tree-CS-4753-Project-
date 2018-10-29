@@ -191,6 +191,12 @@ input, select, textarea {
 		.container.medium {
 			width: 1050px;
 		}
+		
+		.container.mediumPost {
+			border: 2px solid grey;
+			border-radius: 5px;
+			
+		}
 
 		@media screen and (max-width: 1680px) {
 
@@ -3143,6 +3149,12 @@ input, select, textarea {
 			}
 
 			h3 {
+				font-size: 1em;
+				letter-spacing: 0.025em;
+			}
+
+			h4 {
+				padding-bottom: 0.5em;
 				font-size: 1em;
 				letter-spacing: 0.025em;
 			}
