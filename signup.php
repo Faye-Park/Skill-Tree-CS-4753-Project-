@@ -73,7 +73,7 @@
 												<input type="text" name="city" placeholder="City" />
 											</div>
 											<div class="col-6 col-12-mobile">
-												State </ br>
+												State <br />
 												<select name="state">
 													<option value="">Select state</option>
 													<option value="AL">Alabama</option>
