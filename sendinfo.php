@@ -33,14 +33,15 @@ else {
         //Server settings
         $mail->SMTPDebug = 2;
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com;smtp-relay.gmail.com';
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'skillTreeOfficial@gmail.com';
         $mail->Password = 'eCommerceSkillTree!';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
-
-        $mail->setFrom($email, $firstname);
+    
+        $mail->setFrom('skillTreeOfficial@gmail.com', 'SkillTree');
+        $mail->addAddress($email);
         $mail->isHTML(true);
         $mail->Subject = 'Welcome to SkillTree!';
         $mail->Body = '<h2>Welcome to SkillTree!</h2>
@@ -48,8 +49,9 @@ else {
         $mail->AltBody = 'Welcome to SkillTree!
                         Thank you for signing up for SkillTree! You now have access to all available tutoring sessions.';
         $mail->send();
+        echo 'message sent';
     } catch (Exception $e) {
-        
+        echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     }
 }
 header("Location: $url");
