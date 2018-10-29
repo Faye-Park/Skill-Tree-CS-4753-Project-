@@ -50,13 +50,7 @@
 													</div>
                           <p>Learn the basic syntax and control flows of java <br />
 														and begin your journey with programming.</p>
-			      <?php 
-					$url="https://api.bitfinex.com/v1/ticker/btcusd";
-  					$json=json_decode(file_get_contents($url), true);
- 					$btc_conversion=1/json("last_price");
-  					$price=$btc_conversion*$usd;
-  					echo $price;
-					echo "<p>Price $20</p>";?>
+			      <?php require_once( "usdTobtc.php" ); echo "<p>Price: USD $20, BTC</p>; usdTobtc(20.00); ?>
 														<form action="https://test.bitpay.com/checkout" method="post" >
 														  <input type="hidden" name="action" value="checkout" />
 														  <input type="hidden" name="posData" value="" />
