@@ -30,14 +30,24 @@ else {
     // confirmation email
     $mail = new PHPMailer(true);
     try {
+        //Server settings
+        $mail->SMTPDebug = 2;
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com;smtp-relay.gmail.com';
+        $mail->SMTPAuth = true;
         $mail->Username = 'skillTreeOfficial@gmail.com';
         $mail->Password = 'ecommerce1';
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587;
 
         $mail->setFrom($email, $firstname);
         $mail->isHTML(true);
         $mail->Subject = 'Welcome to SkillTree!';
         $mail->Body = '<h2>Welcome to SkillTree!</h2>
                         <p>Thank you for signing up for SkillTree! You now have access to all available tutoring sessions.</p>';
+        $mail->AltBody = 'Welcome to SkillTree!
+                        Thank you for signing up for SkillTree! You now have access to all available tutoring sessions.';
+        $mail->send();
     } catch (Exception $e) {
         
     }
