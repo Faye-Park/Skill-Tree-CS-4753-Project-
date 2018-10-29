@@ -53,19 +53,19 @@
 										<?php endif; ?>
 
 											<div class="col-6 col-12-mobile">
-												First name
+												<h4>First name</h4>
 												<input type="text" name="firstname" placeholder="First Name"/>
 											</div>
 											<div class="col-6 col-12-mobile">
-												Last name
+												<h4>Last name</h4>
 												<input type="text" name="lastname" placeholder="Last Name" />
 											</div>
 											<div class="col-12">
-												Email
+												<h4>Email</h4>
 												<input type="text" name="email" placeholder="Email" />
 											</div>
 											<div class="col-12">
-												Address
+												<h4>Address</h4>
 												<input type="text" name="address" placeholder="Address" />
 											</div>
 											<div class="col-6 col-12-mobile">
