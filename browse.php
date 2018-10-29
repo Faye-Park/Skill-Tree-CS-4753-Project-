@@ -44,7 +44,7 @@
               <div class="container">
                   <div class="row">
                       <div class="container mediumPost col-sm" align="center">
-                          <h2>Java Basics - <b>$20</b></h2>
+                          <h2>Java Basics - <b>$20 <?php print($bit1); ?></b></h2>
 													<div class="imageprev">
 														<img src="https://picsum.photos/1000/200/?random">
 													</div>
@@ -59,14 +59,12 @@
                           <p><font size="-1">Posted by user Faye Park</font></p>
                       </div>
                       <div class="container mediumPost col-sm" align="center">
-                          <h2>Stir Fry - <b>$10</b></h2>
+                          <h2>Stir Fry - <b>$10 <?php print($bit2) ?></b></h2>
 													<div class="imageprev">
 														<img src="https://picsum.photos/1001/200/?random">
 													</div>
                           <p>Learn how to get great flavors from simple ingredients <br />
 														using stir fry techniques.</p>
-			       <p>Price: USD $10, BTC </p>
-			      <?php print $bit1 ?>
 														<form action="https://test.bitpay.com/checkout" method="post" >
 														  <input type="hidden" name="action" value="checkout" />
 														  <input type="hidden" name="posData" value="" />
@@ -140,7 +138,8 @@
 					</ul>
 
 				</footer>
-			<?php $bit1=https://blockchain.info/tobtc?currency=USD&value=20 ?>
+			<?php $bit1= https://blockchain.info/tobtc?currency=USD&value=20 ?>
+			<?php $bit2= https://blockchain.info/tobtc?currency=USD&value=10 ?>
 
 		</div>
 
