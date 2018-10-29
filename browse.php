@@ -50,7 +50,6 @@
 													</div>
                           <p>Learn the basic syntax and control flows of java <br />
 														and begin your journey with programming.</p>
-			      <?php require 'usdTobtc.php'; echo "<p>Price: USD $20, BTC</p>"; usdTobtc(20.00); ?>
 														<form action="https://test.bitpay.com/checkout" method="post" >
 														  <input type="hidden" name="action" value="checkout" />
 														  <input type="hidden" name="posData" value="" />
@@ -66,7 +65,7 @@
 													</div>
                           <p>Learn how to get great flavors from simple ingredients <br />
 														using stir fry techniques.</p>
-			      <?php echo "<p>Price: USD $10, BTC </p>"; usdTobtc(10.00);?>
+			       <p>Price: USD $10, BTC <?php echo $BTC2 ?> </p>
 														<form action="https://test.bitpay.com/checkout" method="post" >
 														  <input type="hidden" name="action" value="checkout" />
 														  <input type="hidden" name="posData" value="" />
@@ -140,6 +139,8 @@
 					</ul>
 
 				</footer>
+			<?php require 'usdTobtc.php'; $BTC1 = usdTobtc(20.00); ?>
+			<?php $BTC2 = usdTobtc(10.00); ?>
 
 		</div>
 
