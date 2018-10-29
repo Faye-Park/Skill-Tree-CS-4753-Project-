@@ -37,6 +37,7 @@
 						<span class="icon fa-laptop"></span>
 						<h2>Browse</h2>
 						<p>Find a topic you want to learn about</p>
+						<?php echo $BTC1 ?>
 					</header>
 
 					<!-- One -->
