@@ -1,4 +1,8 @@
 <?php 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require 'vendor/autoload.php';
+
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
 $email = $_POST["email"];
@@ -22,6 +26,21 @@ if (pg_num_rows($result)>=1) {
 else {
     $sql = "INSERT INTO \"siteUsers\" (firstname, lastname, email, address, city, state, zipcode, password) VALUES ('$firstname','$lastname','$email','$address','$city','$state','$zipcode','$password')";
     $result2 = pg_query($db_connection, $sql);
+
+    // confirmation email
+    $mail = new PHPMailer(true);
+    try {
+        $mail->Username = 'skillTreeOfficial@gmail.com';
+        $mail->Password = 'ecommerce1';
+
+        $mail->setFrom($email, $firstname);
+        $mail->isHTML(true);
+        $mail->Subject = 'Welcome to SkillTree!';
+        $mail->Body = '<h2>Welcome to SkillTree!</h2>
+                        <p>Thank you for signing up for SkillTree! You now have access to all available tutoring sessions.</p>';
+    } catch (Exception $e) {
+        
+    }
 }
 header("Location: $url");
 ?>
