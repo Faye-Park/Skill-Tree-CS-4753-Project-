@@ -51,7 +51,7 @@
                           <p>Learn the basic syntax and control flows of java <br />
 														and begin your journey with programming.</p>
 			      <p>BTC</p> <?php print($bit1); ?>
-			      <?php echo 'Hello World!'; echo $btc1; ?>
+			      <?php echo 'https://blockchain.info/tobtc?currency=USD&value=20'; echo $btc1; ?>
 														<form action="https://test.bitpay.com/checkout" method="post" >
 														  <input type="hidden" name="action" value="checkout" />
 														  <input type="hidden" name="posData" value="" />
