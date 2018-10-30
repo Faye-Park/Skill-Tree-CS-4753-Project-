@@ -54,7 +54,7 @@
 					$json=json_decode( file_get_contents( $url ) );
 					$dollar=$btc=0;
 
-					$btc=1/json('last_price');
+					$btc=1/$json('last_price');
 			      
 						$dollar=1 / $btc;
 					echo "20 dollars = " . round( $dollar * 20,8 )."BTC";?>
