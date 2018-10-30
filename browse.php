@@ -57,10 +57,9 @@
 					foreach( $json as $obj ){
     						if( $obj->code=='USD' )$btc=$obj->rate;
 						}
-
-					echo "1 bitcoin=\$" . $btc . "USD<br />";
+			      
 						$dollar=1 / $btc;
-					echo "10 dollars = " . round( $dollar * 10,8 )."BTC";?>
+					echo "20 dollars = " . round( $dollar * 20,8 )."BTC";?>
 														<form action="https://test.bitpay.com/checkout" method="post" >
 														  <input type="hidden" name="action" value="checkout" />
 														  <input type="hidden" name="posData" value="" />
@@ -76,8 +75,7 @@
 													</div>
                           <p>Learn how to get great flavors from simple ingredients <br />
 														using stir fry techniques.</p>
-			      <p>BTC</p> <?php print($bit2) ?>
-			      <?php echo $btc2 ?>
+			      <?php echo "10 dollars = " . round( $dollar * 10,8 )."BTC";?>
 														<form action="https://test.bitpay.com/checkout" method="post" >
 														  <input type="hidden" name="action" value="checkout" />
 														  <input type="hidden" name="posData" value="" />
