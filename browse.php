@@ -147,14 +147,7 @@
 					</ul>
 
 				</footer>
-			<
-			<?php 
-				require_once( "usdTobtc.php" ); 
-				$btc1=usdTobtc(20.00);
-				$btc2=usdTobtc(10.00);
-				$bit1= "https://blockchain.info/tobtc?currency=USD&value=20";
-				$bit2= "https://blockchain.info/tobtc?currency=USD&value=10"; ?>
-
+			
 		</div>
 
 		<!-- Scripts -->
