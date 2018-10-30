@@ -50,8 +50,17 @@
 													</div>
                           <p>Learn the basic syntax and control flows of java <br />
 														and begin your journey with programming.</p>
-			      <p>BTC</p> <?php print($bit1); ?>
-			      <?php echo 'https://blockchain.info/tobtc?currency=USD&value=20'; echo $btc1; ?>
+			      <?php $url='https://bitpay.com/api/rates';
+					$json=json_decode( file_get_contents( $url ) );
+					$dollar=$btc=0;
+
+					foreach( $json as $obj ){
+    						if( $obj->code=='USD' )$btc=$obj->rate;
+						}
+
+					echo "1 bitcoin=\$" . $btc . "USD<br />";
+						$dollar=1 / $btc;
+					echo "10 dollars = " . round( $dollar * 10,8 )."BTC";?>
 														<form action="https://test.bitpay.com/checkout" method="post" >
 														  <input type="hidden" name="action" value="checkout" />
 														  <input type="hidden" name="posData" value="" />
