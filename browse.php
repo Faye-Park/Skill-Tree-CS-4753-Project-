@@ -51,10 +51,10 @@
                           <p>Learn the basic syntax and control flows of java <br />
 														and begin your journey with programming.</p>
 			      <?php $url='https://api.bitfinex.com/v1/ticker/btcusd';
-					$json=json_decode( file_get_contents( $url ) );
+					$obj=json_decode(file_get_contents($url), true);
 					$dollar=$btc=0;
 
-					$btc=1/$json('last_price');
+					$btc=$obj['last_price'];
 			      
 						$dollar=1 / $btc;
 					echo "20 dollars = " . round( $dollar * 20,8 )."BTC";?>
