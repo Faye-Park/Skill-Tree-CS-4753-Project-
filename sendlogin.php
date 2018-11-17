@@ -17,7 +17,7 @@ $url = "https://skill-tree-ecommerce-project.herokuapp.com/confirmation.html";
 
 echo "Hello2";
 
-if (pg_num_rows($result)) {
+if (pg_num_rows($result) == 1) {
     echo "Logged in";
 }
 else {
