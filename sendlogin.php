@@ -14,11 +14,14 @@ $result = pg_query($db_connection,$check1;
 
 $url = "https://skill-tree-ecommerce-project.herokuapp.com/confirmation.html";
 
+echo "Hello";
+
 if (pg_num_rows($result)) {
     echo "Logged in";
 }
 else {
     $url="https://skill-tree-ecommerce-project.herokuapp.com/loginj.php?login=0";
+    echo "Uh oh";
 }
 header("Location: $url");
 ?>
