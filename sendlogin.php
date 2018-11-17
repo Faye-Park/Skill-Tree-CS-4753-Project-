@@ -21,7 +21,7 @@ if (pg_num_rows($result)) {
     echo "Logged in";
 }
 else {
-    $url="https://skill-tree-ecommerce-project.herokuapp.com/loginj.php?login=0";
+    $url="https://skill-tree-ecommerce-project.herokuapp.com/login.php?login=0";
     echo "Uh oh";
 }
 header("Location: $url");
