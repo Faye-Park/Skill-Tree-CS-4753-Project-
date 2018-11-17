@@ -12,6 +12,7 @@ echo "Hello1";
 
 $check  = "SELECT * FROM table WHERE email='$email'";
 $result = pg_query($db_connection,$check);
+echo "$result";
 
 $url = "https://skill-tree-ecommerce-project.herokuapp.com/confirmation.html";
 
