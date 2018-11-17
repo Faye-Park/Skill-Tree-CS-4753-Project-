@@ -21,10 +21,10 @@
 					<nav id="nav">
 						<ul>
 							<li class="current"><a href="index.html">Home</a></li>
-							<li class="current"><a href="browse.html">Browse</a></li>
+							<li class="current"><a href="browse.php">Browse</a></li>
 							<li class="current"><a href="aboutus.html">About Us</a></li>
 							<li class="current"><a href="contact.php">Contact Us</a></li>
-							<li class="current"><a href="login.html">Log In</a></li>
+							<li class="current"><a href="login.php">Log In</a></li>
 							<li><a href="signup.php" class="button primary">Sign Up</a></li>
 						</ul>
 					</nav>
@@ -55,7 +55,7 @@
 					$dollar=$btc=0;
 
 					$btc=$obj['last_price'];
-			      
+
 						$dollar=1 / $btc;
 					echo "20 dollars = " . round( $dollar * 20,8 )."BTC";?>
 														<form action="https://test.bitpay.com/checkout" method="post" >
@@ -147,7 +147,7 @@
 					</ul>
 
 				</footer>
-			
+
 		</div>
 
 		<!-- Scripts -->
