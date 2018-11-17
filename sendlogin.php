@@ -18,11 +18,13 @@ $url = "https://skill-tree-ecommerce-project.herokuapp.com/confirmation.html";
 echo "Hello2";
 
 if (pg_num_rows($result) == 1) {
-    echo "Logged in";
+    echo "$email";
+    echo "$password";
+    echo "$result";
 }
 else {
     $url="https://skill-tree-ecommerce-project.herokuapp.com/login.php?login=0";
     echo "Uh oh";
 }
-header("Location: $url");
+/*header("Location: $url");*/
 ?>
