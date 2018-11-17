@@ -25,6 +25,9 @@ if (pg_num_rows($result) == 1) {
 else {
     $url="https://skill-tree-ecommerce-project.herokuapp.com/login.php?login=0";
     echo "Uh oh";
+    echo "$email";
+    echo "$result";
+    echo "$password";
 }
 /*header("Location: $url");*/
 ?>
