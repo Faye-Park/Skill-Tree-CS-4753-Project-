@@ -1,6 +1,4 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 $email = $_POST["email"];
@@ -9,12 +7,15 @@ $db_connection = pg_connect("host=ec2-184-72-234-230.compute-1.amazonaws.com por
 if ($db_connection->connect_error) {
     die("connection failed: " . $db_connection->connect_error);
 }
+
+echo "Hello1";
+
 $check = "SELECT * FROM \"siteUsers\" WHERE email='$email' and password='$password'";
-$result = pg_query($db_connection,$check1;
+$result = pg_query($db_connection,$check);
 
 $url = "https://skill-tree-ecommerce-project.herokuapp.com/confirmation.html";
 
-echo "Hello";
+echo "Hello2";
 
 if (pg_num_rows($result)) {
     echo "Logged in";

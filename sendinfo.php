@@ -19,7 +19,6 @@ $check = "SELECT * FROM \"siteUsers\" WHERE email='$email'";
 $result = pg_query($db_connection,$check);
 $url = "https://skill-tree-ecommerce-project.herokuapp.com/confirmation.html";
 
-
 if (pg_num_rows($result)>=1) {
     $url="https://skill-tree-ecommerce-project.herokuapp.com/signup.php?signup=0";
 }
