@@ -21,8 +21,8 @@ if (pg_num_rows($result)>=1) {
 
     echo "$db_password";
 
-    if(password_verify($password, $db_password)) {
-          $url="https://skill-tree-ecommerce-project.herokuapp.com/login.php?login=0";
+    if(!password_verify($password, $db_password)) {
+        $url="https://skill-tree-ecommerce-project.herokuapp.com/login.php?login=0";
     }
 }
 else {
