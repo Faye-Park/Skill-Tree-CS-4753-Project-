@@ -20,8 +20,8 @@ echo "Hello2";
 if (pg_num_rows($result)>=1) {
     echo "We got email boys";
 
-    $row = mysqli_fetch_assoc($result);
-    $db_password = $row["password"];
+    $row = pg_fetch_assoc($result);
+    $db_password = $row['password'];
 
     echo "$db_password";
 
