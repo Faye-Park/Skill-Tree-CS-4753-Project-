@@ -8,17 +8,13 @@ if ($db_connection->connect_error) {
     die("connection failed: " . $db_connection->connect_error);
 }
 
-echo "Hello1";
 
 $check = "SELECT * FROM \"siteUsers\" WHERE email='$email'";
 $result = pg_query($db_connection,$check);
 
 $url = "https://skill-tree-ecommerce-project.herokuapp.com/confirmation.html";
 
-echo "Hello2";
-
 if (pg_num_rows($result)>=1) {
-    echo "We got email boys";
 
     $row = pg_fetch_assoc($result);
     $db_password = $row['password'];
@@ -26,15 +22,12 @@ if (pg_num_rows($result)>=1) {
     echo "$db_password";
 
     if(password_verify($password, $db_password)) {
-        echo "Success!!!";
+          $url="https://skill-tree-ecommerce-project.herokuapp.com/login.php?login=0";
     }
 }
 else {
     $url="https://skill-tree-ecommerce-project.herokuapp.com/login.php?login=0";
-    echo "Uh oh";
-    echo "$email";
-    echo "$result";
-    echo "$password";
 }
-/*header("Location: $url");*/
+
+header("Location: $url");
 ?>
