@@ -22,12 +22,12 @@ if (pg_num_rows($result)>=1) {
     $row = pg_fetch_assoc($result);
     $db_password = $row['password'];
 
-    $_SESSION['valid'] = true;
-    $_SESSION['timeout'] = time();
-    $_SESSION['email'] = "$email";
-
-    if(!password_verify($password, $db_password)) {
-        $url="https://skill-tree-ecommerce-project.herokuapp.com/login.php?login=0";
+    if(password_verify($password, $db_password)) {
+      $_SESSION['valid'] = true;
+      $_SESSION['timeout'] = time();
+      $_SESSION['email'] = "$email";
+    } else {
+      $url="https://skill-tree-ecommerce-project.herokuapp.com/login.php?login=0";
     }
 }
 else {

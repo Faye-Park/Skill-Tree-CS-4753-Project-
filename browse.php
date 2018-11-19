@@ -36,7 +36,7 @@
 						<li class="current"><a href="contact.php">Contact Us</a></li>
 						<?php if (isset($_SESSION['valid'])): ?>
 							<li class="current"><a href="logout.php">Log Out</a></li>
-							<li><a href="memberpage.php" class="button primary">Sign Up</a></li>
+							<li><a href="memberpage.php" class="button primary">Member Page</a></li>
 						<?php else: ?>
 							<li class="current"><a href="login.php">Log In</a></li>
 							<li><a href="signup.php" class="button primary">Sign Up</a></li>
