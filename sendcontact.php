@@ -12,7 +12,7 @@ $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
 
-$url = "https://skill-tree-ecommerce-project.herokuapp.com/contactconfirmation.html";
+$url = "https://skill-tree-ecommerce-project.herokuapp.com/contactconfirmation.php";
 
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {

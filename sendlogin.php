@@ -15,7 +15,7 @@ if ($db_connection->connect_error) {
 $check = "SELECT * FROM \"siteUsers\" WHERE email='$email'";
 $result = pg_query($db_connection,$check);
 
-$url = "https://skill-tree-ecommerce-project.herokuapp.com/confirmation.html";
+$url = "https://skill-tree-ecommerce-project.herokuapp.com/confirmation.php";
 
 if (pg_num_rows($result)>=1) {
 
