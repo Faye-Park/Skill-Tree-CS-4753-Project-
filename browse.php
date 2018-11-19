@@ -4,6 +4,16 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+<?php
+   session_start();
+
+   if( isset( $_SESSION['valid'] ) ) {
+   } else {
+	 	header("Location: https://skill-tree-ecommerce-project.herokuapp.com/login.php?login=0");
+   }
+?>
+
 <html>
 	<head>
 		<title>Browse - Skill Tree</title>
