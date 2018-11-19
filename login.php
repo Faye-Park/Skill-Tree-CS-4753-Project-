@@ -68,7 +68,7 @@
 												<input type="password" name="password" placeholder="Password" />
 											</div>
 											<div class="col-12 col-12-mobile">
-												<p><a href="#">Forgot Password?</a></p>
+												<p><a href="contact.php">Having trouble? Contact us.</a></p>
 											</div>
 											<div class="col-12">
 												<ul class="buttons">

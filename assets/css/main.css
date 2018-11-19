@@ -201,6 +201,11 @@ input, select, textarea {
 			padding-right: 0;
 		}
 
+		.review {
+			padding-left: 2em;
+			padding-right: 2em;
+		}
+
 		@media screen and (max-width: 1680px) {
 
 			.container {

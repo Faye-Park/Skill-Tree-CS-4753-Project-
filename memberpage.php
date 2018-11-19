@@ -65,6 +65,15 @@
 									</ul>
 								</footer>
 							</div>
+              <div class="col-4 col-12-narrower imp-narrower">
+
+                <ul class="featured-icons">
+                  <div class="imageprev">
+                    <img src="https://picsum.photos/g/400/400/?image=0&random">
+                  </div>
+                </ul>
+
+              </div>
 						</div>
 					</section>
 
@@ -73,12 +82,15 @@
               <div class="container">
                   <div class="row">
                       <div class="container mediumPost col-sm" align="center">
-													<h1>Member Information</h1>
+													<h2>Member Information</h2>
                           <p><font size="-1">You can change your information here</font></p>
                       </div>
-                      <div class="container mediumPost col-sm" align="center">
-												<h1>Recent Transactions</h1>
-												<p><font size="-1">You can change your information here</font></p>
+                      <div class="container mediumPost col-sm review" align="center">
+												<h2>Recent Review</h2>
+                        <h1>Stir Fry Basics (5/5)</h1>
+												<p><font size="-1">"After taking this class, I learned how to stir fry like a pro. <br />
+                          The instructions were very easy to do, and Richard is a great chef. Would highly <br />
+                          recommend to all of my friends!"</font></p>
                       </div>
                   </div>
               </div>
