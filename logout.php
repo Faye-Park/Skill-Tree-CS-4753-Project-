@@ -8,15 +8,14 @@
 <?php
    session_start();
 
-	 if( isset( $_SESSION['valid'] ) ) {
-	 } else {
-	 header("Location: https://skill-tree-ecommerce-project.herokuapp.com/login.php?login=0");
-	 }
+   unset($_SESSION["email"]);
+   unset($_SESSION["password"]);
+   unset($_SESSION["valid"]);
 ?>
 
 <html>
 	<head>
-		<title>Members - Skill Tree</title>
+		<title>Log out - Skill Tree</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -48,40 +47,11 @@
 			<!-- Main -->
 				<article id="main">
 
-					<section class="wrapper style3 container special-alt">
-						<div class="row gtr-50">
-							<div class="col-8 col-12-narrower">
-								<header>
-									<h2>Welcome back!</h2>
-								</header>
-								<p>Unlike most websites that offer videos to learn concepts, we decided to reintroduce the human
-									aspect of what makes learning great. You will be connected with someone who can help answer your questions
-									and guide you along in a way that a prerecorded video couldn't do. With cost-effective sessions and thousands
-									of options at your finger tips, you can get help at all hours as much as you wish, or as little as you wish.
-								</p>
-								<footer>
-									<ul class="buttons">
-										<li><a href="browse.php" class="button">Browse</a></li>
-									</ul>
-								</footer>
-							</div>
-						</div>
-					</section>
-
-					<!-- One -->
-						<!--<section class="wrapper style4 special container medium">-->
-              <div class="container">
-                  <div class="row">
-                      <div class="container mediumPost col-sm" align="center">
-													<h1>Member Information</h1>
-                          <p><font size="-1">You can change your information here</font></p>
-                      </div>
-                      <div class="container mediumPost col-sm" align="center">
-												<h1>Recent Transactions</h1>
-												<p><font size="-1">You can change your information here</font></p>
-                      </div>
-                  </div>
-              </div>
+					<header class="special container">
+						<span class="icon fa-laptop"></span>
+						<h2>Success</h2>
+						<p>You have been logged out of SkillTree.</p>
+					</header>
 
 				</article>
 

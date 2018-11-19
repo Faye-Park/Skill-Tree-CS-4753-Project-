@@ -26,7 +26,7 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-      <header id="header" class="alt">
+      <header id="header">
 				<h1 id="logo"><a href="index.php">Skill Tree<span></span></a></h1>
 				<nav id="nav">
 					<ul>

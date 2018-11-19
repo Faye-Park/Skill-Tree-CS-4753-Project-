@@ -4,6 +4,11 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+<?php
+   session_start();
+?>
+
 <html>
 	<head>
 		<title>Signup - Skill Tree</title>
@@ -15,7 +20,7 @@
 	<body class="contact is-preload">
 		<div id="page-wrapper">
 
-			<header id="header" class="alt">
+			<header id="header">
 				<h1 id="logo"><a href="index.php">Skill Tree<span></span></a></h1>
 				<nav id="nav">
 					<ul>
@@ -25,7 +30,7 @@
 						<li class="current"><a href="contact.php">Contact Us</a></li>
 						<?php if (isset($_SESSION['valid'])): ?>
 							<li class="current"><a href="logout.php">Log Out</a></li>
-							<li><a href="memberpage.php" class="button primary">Sign Up</a></li>
+							<li><a href="memberpage.php" class="button primary">Member Page</a></li>
 						<?php else: ?>
 							<li class="current"><a href="login.php">Log In</a></li>
 							<li><a href="signup.php" class="button primary">Sign Up</a></li>
