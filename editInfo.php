@@ -82,31 +82,31 @@ $zipcode = $row['zipcode'];?>
 
 											<div class="col-6 col-12-mobile">
 												First name
-												<input type="text" name="firstname" value="<?php echo $firstname;?>" />
+												<input type="text" name="firstname" value="<?php echo $firstname;?>" disabled/>
 											</div>
 											<div class="col-6 col-12-mobile">
 												Last name
-												<input type="text" name="lastname" value="<?php echo $lastname;?>" />
+												<input type="text" name="lastname" value="<?php echo $lastname;?>" disabled/>
 											</div>
 											<div class="col-12">
 												Email
-												<input type="text" name="email" value="<?php echo $email;?>" />
+												<input type="text" name="email" value="<?php echo $email;?>" disabled/>
 											</div>
 											<div class="col-12">
 												Address
-												<input type="text" name="address" value="<?php echo $address;?>" />
+												<input type="text" name="address" value="<?php echo $address;?>" disabled/>
 											</div>
 											<div class="col-6 col-12-mobile">
 												City
-												<input type="text" name="city" value="<?php echo $city;?>" />
+												<input type="text" name="city" value="<?php echo $city;?>" disabled/>
 											</div>
 											<div class="col-6 col-12-mobile">
 												State <br />
-												<input type="text" name="city" value="<?php echo $state;?>" />
+												<input type="text" name="city" value="<?php echo $state;?>" disabled/>
 											</div>
 											<div class="col-6 col-12-mobile">
 												Zipcode
-												<input type="text" name="zipcode" value="<?php echo $zipcode;?>" />
+												<input type="text" name="zipcode" value="<?php echo $zipcode;?>" disabled/>
 											</div>
 										</div>
 									</form>
