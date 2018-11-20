@@ -21,9 +21,7 @@ $result = pg_query($db_connection,$check);
 $row = pg_fetch_assoc($result);
 
 $firstname = $row['firstname'];
-$lastname = $row['lastname'];
-
-?>
+$lastname = $row['lastname'];?>
 
 <html>
 	<head>
@@ -79,7 +77,7 @@ $lastname = $row['lastname'];
 
 											<div class="col-6 col-12-mobile">
 												First name1
-												<input type="text" name="firstname" value="<?php echo "hey";?>" />
+												<input type="text" name="firstname" value="<?php echo $firstname;?>" />
 											</div>
 											<div class="col-6 col-12-mobile">
 												Last name
