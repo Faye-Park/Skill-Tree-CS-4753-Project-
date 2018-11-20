@@ -78,16 +78,16 @@ $lastname = $row['lastname'];
 										<?php endif; ?>
 
 											<div class="col-6 col-12-mobile">
-												First name
-												<input type="text" name="firstname" value="<?php $firstname;?>" />
+												First name1
+												<input type="text" name="firstname" value="<?php echo "hey";?>" />
 											</div>
 											<div class="col-6 col-12-mobile">
 												Last name
-												<input type="text" name="lastname" value="<?php $lastname;?>" />
+												<input type="text" name="lastname" value="<?php echo "hello";?>" />
 											</div>
 											<div class="col-12">
 												Email
-												<input type="text" name="email" value="<?php $email;?>" />
+												<input type="text" name="email" value="<?php echo "howdy";?>" />
 											</div>
 											<div class="col-12">
 												Address
