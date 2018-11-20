@@ -26,8 +26,6 @@ if (pg_num_rows($result)>=1) {
       $_SESSION['valid'] = true;
       $_SESSION['timeout'] = time();
       $_SESSION['email'] = "$email";
-      $_SESSION['firstname'] = $firstname;
-      $_SESSION['lastname'] = $lastname;
     } else {
       $url="https://skill-tree-ecommerce-project.herokuapp.com/login.php?login=0";
     }
