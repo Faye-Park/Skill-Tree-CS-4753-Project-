@@ -84,6 +84,11 @@
                       <div class="container mediumPost col-sm" align="center">
 													<h2>Member Information</h2>
                           <p><font size="-1">You can change your information here</font></p>
+			      <footer>
+					<ul class="buttons">
+						<li><a href="editInfo.php" class="button">Edit Information</a></li>
+					</ul>
+				</footer>
                       </div>
                       <div class="container mediumPost col-sm review" align="center">
 												<h2>Recent Review</h2>
