@@ -15,6 +15,7 @@ $db_connection = pg_connect("host=ec2-184-72-234-230.compute-1.amazonaws.com por
 if ($db_connection->connect_error) {
     die("connection failed: " . $db_connection->connect_error);
 }
+$email = $_SESSION['email'];
 $check = "SELECT * FROM \"siteUsers\" WHERE email='$email'";
 
 $result = pg_query($db_connection,$check);
