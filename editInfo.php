@@ -6,12 +6,22 @@
 -->
 
 <?php
-   session_start();
+require 'vendor/autoload.php';
+ob_start();
+session_start();
 
-$_SESSION["address"]=$address;
-$_SESSION["city"]=$city;
-$_SESSION["state"]=$state;
-$_SESSION["zipcode"]=$zipcode;
+$db_connection = pg_connect("host=ec2-184-72-234-230.compute-1.amazonaws.com port=5432 dbname=d9rsujpdd41171 user=zaimztdkhiptlg password=25fe2e242db912e7638b18668ef861180124a0081ad0bd07ca7f33e1bd6c7de8 sslmode=require");
+if ($db_connection->connect_error) {
+    die("connection failed: " . $db_connection->connect_error);
+}
+$check = "SELECT * FROM \"siteUsers\" WHERE email='$email'";
+
+$result = pg_query($db_connection,$check);
+$row = pg_fetch_assoc($result);
+
+$firstname = $row['firstname'];
+$lastname = $row['lastname'];
+
 ?>
 
 <html>
