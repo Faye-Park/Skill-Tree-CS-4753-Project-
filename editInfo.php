@@ -16,7 +16,7 @@ if ($db_connection->connect_error) {
     die("connection failed: " . $db_connection->connect_error);
 }
 $email = $_SESSION['email'];
-$check = "SELECT * FROM \"siteUsers\" WHERE email='$email'";
+$check = "SELECT * FROM \"siteUsers\" WHERE email='$_SESSION['email']'";
 
 $result = pg_query($db_connection,$check);
 $row = pg_fetch_assoc($result);
@@ -26,7 +26,7 @@ $lastname = $row['lastname'];?>
 
 <html>
 	<head>
-		<title>Signup - Skill Tree</title>
+		<title>Edit Information - Skill Tree</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
