@@ -49,9 +49,6 @@
 							<!-- Content -->
 								<div class="content">
 									<section>
-										<div class="imageprev">
-											<img src="https://picsum.photos/g/2000/400/?image=0&blur">
-										</div>
 										<header>
 											<h3>User: Richard Ohr</h3>
 										</header>
@@ -60,9 +57,6 @@
                                         <p>Hi, I'm Richard! I can teach you how to cook or some basic programming skills.</p>
                                         <p><b>Average Rating</b><p>
                                         <p>3/5</p>
-										<ul class="buttons">
-											<li><a href="signup.php" class="button primary">Sign Up Now</a></li>
-										</ul>
 									</section>
 								</div>
 
