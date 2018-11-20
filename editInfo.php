@@ -8,9 +8,6 @@
 <?php
    session_start();
 
-$_SESSION["firstname"]=$firstname;
-$_SESSION["lastname"]=$lastname;
-$_SESSION["email"]=$email;
 $_SESSION["address"]=$address;
 $_SESSION["city"]=$city;
 $_SESSION["state"]=$state;
@@ -71,11 +68,11 @@ $_SESSION["zipcode"]=$zipcode;
 
 											<div class="col-6 col-12-mobile">
 												First name
-												<input type="text" name="firstname" placeholder='<?php echo $_SESSION["firstname"] ?>' />
+												<input type="text" name="firstname" placeholder='<?php echo $firstname ?>' />
 											</div>
 											<div class="col-6 col-12-mobile">
 												Last name
-												<input type="text" name="lastname" placeholder="Last Name" />
+												<input type="text" name="lastname" placeholder='<?php echo $lastname ?>' />
 											</div>
 											<div class="col-12">
 												Email
