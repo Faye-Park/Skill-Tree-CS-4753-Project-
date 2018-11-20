@@ -79,15 +79,15 @@ $lastname = $row['lastname'];
 
 											<div class="col-6 col-12-mobile">
 												First name
-												<input type="text" name="firstname" placeholder="<?php echo $firstname;?>" />
+												<input type="text" name="firstname" value="<?php $firstname;?>" />
 											</div>
 											<div class="col-6 col-12-mobile">
 												Last name
-												<input type="text" name="lastname" placeholder="<?php echo $lastname;?>" />
+												<input type="text" name="lastname" value="<?php $lastname;?>" />
 											</div>
 											<div class="col-12">
 												Email
-												<input type="text" name="email" placeholder="<?php echo $email;?>" />
+												<input type="text" name="email" value="<?php $email;?>" />
 											</div>
 											<div class="col-12">
 												Address
