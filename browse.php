@@ -95,7 +95,7 @@
 														  <input type="hidden" name="data" value="qzJcvD360bZEdUmbKOCpi0s4U+tTzkyPa/QNfPYMGLSO2eKlnr1kT8+PglGbJ/LlEudH8LYGgxKH4lqXRqsHnl50Z/KD5APLsNIecO0yug7ab06kmueNWasyWn3jCh3DNznK5aT2KwWkDfRX2H1HULxAMd7q49m+3GsXtfXrp34oBH9kHWQkqjsdt4Aor7VSTAu1Tx7Nfe8z2+jM0Mv83Wfo8/pN9xlPUteQl6ZU+fpyQNLIc6jbUl9Y6Qcf5BglTepZDm45dK0bsleWXcO/SKiFossvREhJFsly8R1964P2QmT/ZiD7ay0hdG0VPqZc" />
 														  <input type="image" src="https://test.bitpay.com/cdn/en_US/bp-btn-pay-currencies.svg" name="submit" style="width:210px;" alt="BitPay, the easy way to pay with bitcoins." >
 														</form>
-                          <p><font size="-1">Posted by user Richard Ohr</font></p>
+                          <p><font size="-1">Posted by user <a href="https://skill-tree-ecommerce-project.herokuapp.com/user1000.php">Richard Ohr</a></font></p>
                       </div>
                   </div>
               </div>
