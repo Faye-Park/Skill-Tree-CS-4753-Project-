@@ -44,8 +44,8 @@
 
 					<header class="special container">
 						<span class="icon fa-inbox"></span>
-						<h2>Start Learning Today</h2>
-						<p>Have an idea or passion you want to pursue? Begin today.</p>
+						<h2>Edit Member Information</h2>
+						<p>Make any changes to your information. Don't forget to save!</p>
 					</header>
 
 					<!-- One -->
@@ -152,7 +152,7 @@
 											</div>
 											<div class="col-12">
 												<ul class="buttons">
-													<li><input type="submit" class="special" value="Signup" /></li>
+													<li><input type="submit" class="special" value="Save" /></li>
 												</ul>
 											</div>
 										</div>
