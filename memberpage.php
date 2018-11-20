@@ -83,10 +83,10 @@
                   <div class="row">
                       <div class="container mediumPost col-sm" align="center">
 													<h2>Member Information</h2>
-                          <p><font size="-1">You can change your information here</font></p>
+                          <p><font size="-1">You can view your user information here.</font></p>
 			      <footer>
 					<ul class="buttons">
-						<li><a href="editInfo.php" class="button">Edit Information</a></li>
+						<li><a href="editInfo.php" class="button">View Information</a></li>
 					</ul>
 				</footer>
                       </div>
